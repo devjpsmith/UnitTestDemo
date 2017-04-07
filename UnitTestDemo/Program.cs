@@ -19,9 +19,12 @@ namespace UnitTestDemo
                 We would create some of our objects here
                 Let's just start off with creating some "contexts" that we'll need for instantiating our classes
             */
+
+            // We need to start by creating a person repo. This object will be required to construct all the
+            //  subsequent service objects that we are going to use.
             PersonRepository personRepo = new PersonRepository(new DatabaseContext());
 
-            // First we'll create a PersonRetreivalService to download some data
+            // We'll create a PersonRetreivalService to download some data
             PersonRetreivalService personRetreivalService = new PersonRetreivalService(personRepo, new WebApiContext());
             // Now we could call this service's methods to download some data
             //  the service would get data from the API and save it locally in the database
