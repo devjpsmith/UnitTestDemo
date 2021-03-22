@@ -2,7 +2,7 @@
 
 ## Overview ##
 
-This is a vary simple application that does nothing except demonstrate some
+This is a simple application that does nothing except demonstrate some
 concepts about unit testing. 
 
 The main application, UnitTestDemo, is a .NET
